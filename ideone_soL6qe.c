@@ -3,8 +3,9 @@
 int main(void) {
 
 
-	int i,j,d,n,a[10],temp;
-	scanf("%d",&d);//input
+	int i,j,d,e,n,a[10],temp;
+	scanf("%d",&e);//input
+	d=abs(e);
 	n=0;
 	while(d>0)
 	{
@@ -28,6 +29,9 @@ int main(void) {
 	for(i=0;i<n;i++)
 	d=d*10+a[i];
 	d=d/1000;
+	if(e<0)
+	printf("%d",-d);
+	else
 	printf("%d",d);//output
 
 	return 0;
